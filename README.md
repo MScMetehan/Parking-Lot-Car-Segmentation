@@ -96,12 +96,6 @@ ParkingLot_dataset/
 ├── Line/preprocessed6.png   # static line mask
 ├── XML/                     # OUTPUT: per-frame XML        (must exist before running)
 └── Sonuclar/ Sonuclar2/ Sonuclar3/   # OUTPUT: annotated images (must exist before running)
-```
-
-> **Heads-up:** OpenCV's `imwrite` does **not** create directories — the output folders above must exist
-> before you run, otherwise saving fails silently.
-> The `Sonuclar*` folders are named in Turkish; you may want to rename them (e.g. `Results*`) and update
-> the paths in `Main.cpp`.
 
 ---
 
@@ -140,14 +134,6 @@ Place `ParkingLot_dataset/` next to the executable (the code uses relative paths
 
 ## Results
 
-Qualitative results are shown below. Add your result images to a `docs/` folder and reference them, e.g.:
-
-```markdown
-![Parking-space detection vs. ground truth](docs/bounding_box_comparison.png)
-![Occupancy detection vs. ground truth](docs/occupancy_detection.png)
-![Vehicle segmentation vs. ground truth](docs/car_segmentation.png)
-```
-
 See `CV_Project_Report.pdf` for the full set of figures and the detailed write-up.
 
 **Evaluation status:** Mean Average Precision (mAP) for localization and Mean Intersection over Union
@@ -181,7 +167,7 @@ finalized** due to implementation issues. Current results are presented **qualit
 
 ## Authors
 
-Metehan Kurtoğlu, Gülce Şirvancı, Sezer Yakıt — University of Padova, Computer Vision course project.
+Metehan Kurtoğlu — University of Padova, Computer Vision course project.
 
 ---
 
